@@ -13,7 +13,7 @@ import FrontGlass from './FrontGlass';
 import Sticker from './Sticker';
 
 const Bus = (context) =>
-	<div>
+	<div className="busBackground">
 		<BusBody { ...context }/>
 		<Doors/>
 		<DoorHandle/>
