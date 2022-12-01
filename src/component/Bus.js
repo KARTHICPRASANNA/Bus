@@ -1,5 +1,4 @@
 import { React } from 'react';
-import BusBody from './BusBody';
 import Doors from './Doors';
 import DoorHandle from './DoorHandle';
 import Tyres from './Tyres';
@@ -11,10 +10,11 @@ import LuggageDoors from './LuggageDoors';
 import LuggageDoorsHandle from './LuggageDoorsHandle';
 import FrontGlass from './FrontGlass';
 import Sticker from './Sticker';
+import RedLight from './RedLight';
+import RearIndicator from './RearIndicator';
 
-const Bus = (context) =>
-	<div className="busBackground">
-		<BusBody { ...context }/>
+const Bus = ({ config }) =>
+	<div className="busBody" style={ { backgroundColor: config.busBodyColor } }>
 		<Doors/>
 		<DoorHandle/>
 		<Tyres/>
@@ -26,6 +26,8 @@ const Bus = (context) =>
 		<LuggageDoorsHandle/>
 		<FrontGlass/>
 		<Sticker/>
+		<RedLight/>
+		<RearIndicator/>
 	</div>;
 
 export default Bus;

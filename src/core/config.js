@@ -1,6 +1,6 @@
 import { rndValue } from '@laufire/utils/random';
 
-const colors = ['CadetBlue', 'green', 'Crimson'];
+const colors = ['CadetBlue', 'firebrick', 'paleVioletRed'];
 
 const config = {
 	busBodyColor: rndValue(colors),

@@ -1,4 +1,4 @@
-.busBackground{
+.App{
 	width: 100vw;
 	height: 100vh;
 	background-image: linear-gradient(lightgreen, lightblue) ;
@@ -10,45 +10,47 @@
 	left: 150px;
 	width: 1700px;
 	height: 600px;
-	border-radius: 100px;
+	border-radius: 160px 50px 50px 50px;
 	border: 2px solid black;
 	background-color: lightsalmon;
-	clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .tyre {
 	position: absolute;
 	width: 200px;
 	height: 200px;
-	top: 600px;
+	top: 490px;
 	border-radius: 50%;
-	border: 30px solid black;
-	background-color: white;
+	border: 5px solid grey;
+	background-color: black;
 }
 
 .rim {
 	position: absolute;
-	width: 150px;
+	width: 135px;
 	height: 150px;
-	top: 647px;
+	top: 509px;
 	border-radius: 50%;
-	border: 10px dashed black;
-	background-color: whitesmoke;
+	border: 12px dashed black;
+	background-color: grey;
 }
 
 .window {
-	margin-left: 550px;
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	margin-left: 450px;
 	border-radius: 30px;
 	border: 2px solid black;
-	background-color: wheat;
+	background-color: aquamarine;
 }
 
 .door {
 	position: absolute;
 	height: 450px;
 	width: 250px;
-	bottom: 300px;
-	right: 1050px;
+	bottom: 20px;
+	right: 930px;
 	border-radius: 10px;
 	border: 4px solid black;
 	background-color: wheat;
@@ -58,8 +60,8 @@
 	position: absolute;
 	width: 100px;
 	height: 400px;
-	top: 240px;
-	margin-left: 555px;
+	top: 145px;
+	margin-left: 455px;
 	border: 5px double black;
 	background-color: wheat;
 }
@@ -68,8 +70,8 @@
 	position: absolute;
 	height: 50px;
 	width: 20px;
-	right: 1170px;
-	bottom: 530px;
+	right: 1050px;
+	bottom: 240px;
 	background-color: black;
 }
 
@@ -77,27 +79,27 @@
 	position: absolute;
 	border-radius: 50% 50% 0 0;
 	height: 20px;
-	left: 320px;
-	width: 1450px;
-	top: 70px;
+	left: 115px;
+	width: 1550px;
+	top: -30px;
 	background-color: wheat;
 	border: 5px solid black;
 }
 
 .sticker {
 	position: absolute;
-	bottom: 550px;
-	width: 970px;
-	right: 70px;
+	bottom: 300px;
+	width: 925px;
+	right: -1px;
 	border: 3px solid wheat;
 }
 
 .luggageFrame {
 	position: absolute;
 	height: 230px;
-	width: 580px;
+	width: 460px;
 	right: 450px;
-	bottom: 300px;
+	bottom: 20px;
 	border: 3px solid black;
 	background-color: wheat;
 }
@@ -105,15 +107,15 @@
 .luggageSection {
 	position: absolute;
 	height: 230px;
-	right: 742px;
-	bottom: 300px;
+	right: 680px;
+	bottom: 20px;
 	border: 3px double black;
 }
 
 .luggageDoorInterior {
 	position: absolute;
-	width: 280px;
-	bottom: 305px;
+	width: 220px;
+	bottom: 25px;
 	border: 3px double black;
 }
 
@@ -121,17 +123,38 @@
 	position: absolute;
 	height: 10px;
 	width: 30px;
-	right: 880px;
-	bottom: 305px;
+	bottom: 25px;
 	background-color: black;
 }
 
 .frontGlass {
 	position: absolute;
-	height: 350px;
+	top: 2%;
+	border-radius: 150px 0px 60px 0px;
 	width: 130px;
-	left: 223px;
-	bottom: 525px;
-	clip-path: polygon(75% 0, 100% 0, 100% 100%, 0% 100%);
-	background-color: wheat;
+	height: 250px;
+	background-color: darkslategray;
+	clip-path: polygon(5% 0, 100% 0, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 53%);
+	border: 2px solid wheat;
+}
+
+.redLight{
+	position: absolute;
+	top: 360px;
+	right: -20px;
+	height: 50px;
+	width: 18px;
+	background-color: red;
+	border: 1px solid black;
+	border-radius: 2px;
+}
+
+.rearIndicator{
+	position: absolute;
+	top: 414px;
+	right: -20px;
+	height: 50px;
+	width: 18px;
+	background-color: orangered;
+	border: 1px solid black;
 }

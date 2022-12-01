@@ -6,9 +6,8 @@ const multiplier = 350;
 const windowCount = 4;
 
 const windows = range(1, windowCount).map((window) => ({
-	size: 200,
 	x: window * multiplier,
-	y: 150,
+	y: 30,
 }));
 
 const Windows = () => windows.map((window, key) =>
