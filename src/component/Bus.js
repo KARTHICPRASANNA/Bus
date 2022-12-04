@@ -1,33 +1,42 @@
 import { React } from 'react';
 import Doors from './Doors';
-import DoorHandle from './DoorHandle';
 import Tyres from './Tyres';
 import Windows from './Windows';
 import Roof from './Roof';
-import LuggageFrame from './LuggageFrame';
-import LuggageSection from './LuggageSection';
-import LuggageDoors from './LuggageDoors';
-import LuggageDoorsHandle from './LuggageDoorsHandle';
+import Luggage from './Luggage';
 import FrontGlass from './FrontGlass';
 import Sticker from './Sticker';
 import RedLight from './RedLight';
 import RearIndicator from './RearIndicator';
 
-const Bus = ({ config }) =>
-	<div className="busBody" style={ { backgroundColor: config.busBodyColor } }>
+const style = (context) => {
+	const { config: { dimensions: { busBody: { busBodyColor, top,
+		left, width, height }}}} = context;
+
+	return {
+		backgroundColor: busBodyColor,
+		top: `${ top }px`,
+		left: `${ left }px`,
+		width: `${ width }px`,
+		height: `${ height }px`,
+	};
+};
+
+const Bus = (context) =>
+	<div
+		className="busBody"
+		style={ style(context) }
+	>
 		<Doors/>
-		<DoorHandle/>
 		<Tyres/>
 		<Windows/>
-		<Roof/>
-		<LuggageFrame/>
-		<LuggageSection/>
-		<LuggageDoors/>
-		<LuggageDoorsHandle/>
-		<FrontGlass/>
+		<Roof { ...context }/>
+		<Luggage/>
+		<FrontGlass { ...context }/>
 		<Sticker/>
 		<RedLight/>
 		<RearIndicator/>
-	</div>;
+	</div>
+	;
 
 export default Bus;
