@@ -53,9 +53,10 @@ const config = {
 			height: 20,
 		},
 		sticker: {
-			bottom: 300,
-			right: -1,
+			top: 290,
+			left: 770,
 			width: 925,
+			height: 0,
 		},
 		luggageFrame: {
 			bottom: 20,
@@ -85,13 +86,13 @@ const config = {
 		},
 		redLight: {
 			top: 360,
-			right: -20,
+			left: 1700,
 			width: 18,
 			height: 50,
 		},
 		rearIndicator: {
 			top: 414,
-			right: -20,
+			left: 1700,
 			width: 18,
 			height: 50,
 		},
