@@ -78,9 +78,10 @@ const config = {
 			height: 10,
 		},
 		frontGlass: {
-			top: 2,
-			width: 130,
-			height: 250,
+			top: 0,
+			left: 0,
+			width: 105,
+			height: 215,
 		},
 		redLight: {
 			top: 360,

@@ -33,7 +33,7 @@ const Bus = (context) =>
 		<Roof { ...context }/>
 		<Luggage/>
 		<FrontGlass { ...context }/>
-		<Sticker/>
+		<Sticker { ...context }/>
 		<RedLight/>
 		<RearIndicator/>
 	</div>
