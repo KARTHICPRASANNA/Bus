@@ -1,6 +1,15 @@
 import { rndValue } from '@laufire/utils/random';
+import { range } from '@laufire/utils/collection';
 
 const colors = ['CadetBlue', 'firebrick', 'paleVioletRed'];
+
+const outerTyreMultiplier = 1000;
+const OuterTyreNumber = 2;
+const OuterTyreMargin = 245;
+
+const innerTyreMultiplier = 1000;
+const innerTyreNumber = 2;
+const innerTyreMargin = 272;
 
 const config = {
 	dimensions: {
@@ -10,18 +19,6 @@ const config = {
 			width: 1700,
 			height: 600,
 			busBodyColor: rndValue(colors),
-		},
-		tyre: {
-			top: 490,
-			left: 245,
-			width: 200,
-			height: 200,
-		},
-		rim: {
-			top: 509,
-			left: 272,
-			width: 135,
-			height: 150,
 		},
 		window: {
 			top: 30,
@@ -96,6 +93,19 @@ const config = {
 			width: 18,
 			height: 50,
 		},
+		outerTyre: range(0, OuterTyreNumber).map((tyre) => ({
+			top: 490,
+			x: (tyre * outerTyreMultiplier) + OuterTyreMargin,
+			width: 200,
+			height: 200,
+		})),
+		innerTyre: range(0, innerTyreNumber).map((tyre) => ({
+			top: 509,
+			x: (tyre * innerTyreMultiplier) + innerTyreMargin,
+			width: 135,
+			height: 150,
+		})),
+
 	},
 };
 

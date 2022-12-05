@@ -28,7 +28,7 @@ const Bus = (context) =>
 		style={ style(context) }
 	>
 		<Doors/>
-		<Tyres/>
+		<Tyres { ...context }/>
 		<Windows/>
 		<Roof { ...context }/>
 		<Luggage/>

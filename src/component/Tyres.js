@@ -2,10 +2,10 @@ import { React } from 'react';
 import OuterTyre from './OuterTyre';
 import InnerTyre from './InnerTyre';
 
-const Tyres = () =>
+const Tyres = ({ config }) =>
 	<div>
-		<OuterTyre/>
-		<InnerTyre/>
+		<OuterTyre { ...config }/>
+		<InnerTyre { ...config }/>
 	</div>;
 
 export default Tyres;
