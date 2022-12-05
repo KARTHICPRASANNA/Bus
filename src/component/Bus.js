@@ -1,5 +1,5 @@
 import { React } from 'react';
-import Doors from './Doors';
+import Doors from './Doors/Doors';
 import Tyres from './Tyres';
 import Windows from './Windows';
 import Roof from './Roof';
