@@ -31,14 +31,14 @@ const config = {
 			height: 180,
 		},
 		door: {
-			bottom: 20,
-			right: 930,
+			top: 122,
+			left: 510,
 			width: 250,
 			height: 450,
 		},
 		doorHandle: {
-			bottom: 240,
-			right: 1050,
+			top: 305,
+			left: 630,
 			width: 20,
 			height: 50,
 		},
@@ -94,7 +94,7 @@ const config = {
 		},
 		outerTyre: range(0, OuterTyreNumber).map((tyre) => ({
 			top: 490,
-			x: (tyre * outerTyreMultiplier) + OuterTyreMargin,
+			left: (tyre * outerTyreMultiplier) + OuterTyreMargin,
 			width: 200,
 			height: 200,
 		})),
@@ -104,7 +104,7 @@ const config = {
 			width: 135,
 			height: 150,
 		})),
-		doorInterior: range(0, doorCount).map((door) => ({
+		doorInnerFrame: range(0, doorCount).map((door) => ({
 			top: 145,
 			left: (door * doorMultiplier) + doorMargin,
 			width: 100,
