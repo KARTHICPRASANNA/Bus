@@ -1,13 +1,13 @@
 import { React } from 'react';
 import Doors from './Doors/Doors';
-import Tyres from './Tyres';
-import Windows from './Windows';
-import Roof from './Roof';
-import Luggage from './Luggage';
-import FrontGlass from './FrontGlass';
-import Sticker from './Sticker';
-import RedLight from './RedLight';
-import RearIndicator from './RearIndicator';
+import Tyres from './Tyres/Tyres';
+import Windows from './Windows/Windows';
+import Roof from './OtherParts/Roof';
+import Luggage from './Luggages/Luggage';
+import FrontGlass from './OtherParts/FrontGlass';
+import Sticker from './OtherParts/Sticker';
+import RedLight from './OtherParts/RedLight';
+import RearIndicator from './OtherParts/RearIndicator';
 
 const style = (context) => {
 	const { config: { dimensions: { busBody: { busBodyColor, top,
