@@ -1,7 +1,7 @@
 import { React } from 'react';
-import DoorFrame from './DoorFrame';
-import DoorInnerFrame from './DoorInnerFrame';
-import DoorHandle from './DoorHandle';
+import DoorFrame from './Doors/DoorFrame';
+import DoorInnerFrame from './Doors/DoorInnerFrame';
+import DoorHandle from './Doors/DoorHandle';
 
 const Doors = ({ config }) =>
 	<div>
