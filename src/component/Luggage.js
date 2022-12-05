@@ -4,12 +4,12 @@ import LuggageSection from './LuggageSection';
 import LuggageDoors from './LuggageDoors';
 import LuggageDoorsHandle from './LuggageDoorsHandle';
 
-const Luggage = () =>
+const Luggage = ({ config }) =>
 	<div>
-		<LuggageFrame/>
-		<LuggageSection/>
-		<LuggageDoors/>
-		<LuggageDoorsHandle/>
+		<LuggageFrame { ...config }/>
+		<LuggageSection { ...config }/>
+		<LuggageDoors { ...config }/>
+		<LuggageDoorsHandle { ...config }/>
 	</div>;
 
 export default Luggage;

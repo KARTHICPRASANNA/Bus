@@ -1,9 +1,12 @@
 import { React } from 'react';
 
-const LuggageDoorHandle = ({ x }) =>
+const LuggageDoorHandle = ({ top, left, width, height }) =>
 	<div
 		style={ {
-			left: `${ x }px`,
+			top: `${ top }px`,
+			left: `${ left }px`,
+			width: `${ width }px`,
+			height: `${ height }px`,
 		} }
 		className="luggageDoorHandle"
 	/>;

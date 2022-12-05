@@ -18,6 +18,14 @@ const doorMargin = 75;
 const windowMultiplier = 350;
 const windowCount = 4;
 
+const luggageDoorMultiplier = 231;
+const luggageDoorCount = 2;
+const luggageDoorMargin = 785;
+
+const luggageHandleMultiplier = 230;
+const luggageHandleCount = 2;
+const luggageHandleMargin = 890;
+
 const config = {
 	dimensions: {
 		busBody: {
@@ -26,12 +34,6 @@ const config = {
 			width: 1700,
 			height: 600,
 			busBodyColor: rndValue(colors),
-		},
-		window: {
-			top: 30,
-			left: 350,
-			width: 180,
-			height: 180,
 		},
 		door: {
 			top: 122,
@@ -58,24 +60,16 @@ const config = {
 			height: 0,
 		},
 		luggageFrame: {
-			bottom: 20,
-			right: 450,
+			top: 344,
+			left: 780,
 			width: 460,
 			height: 230,
 		},
 		luggageSection: {
-			bottom: 20,
-			right: 680,
+			top: 344,
+			left: 1010,
+			width: 0,
 			height: 230,
-		},
-		luggageDoorInterior: {
-			bottom: 25,
-			width: 220,
-		},
-		luggageDoorHandle: {
-			bottom: 25,
-			width: 30,
-			height: 10,
 		},
 		frontGlass: {
 			top: 0,
@@ -119,7 +113,18 @@ const config = {
 			width: 180,
 			height: 180,
 		})),
-
+		luggageDoors: range(0, luggageDoorCount).map((door) => ({
+			top: 567,
+			left: (door * luggageDoorMultiplier) + luggageDoorMargin,
+			width: 220,
+			height: 0,
+		})),
+		luggageDoorsHandles: range(0, luggageHandleCount).map((handle) => ({
+			top: 564,
+			left: (handle * luggageHandleMultiplier) + luggageHandleMargin,
+			width: 30,
+			height: 10,
+		})),
 	},
 };
 
