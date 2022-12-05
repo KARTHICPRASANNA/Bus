@@ -7,9 +7,9 @@ const outerTyreMultiplier = 1000;
 const OuterTyreNumber = 2;
 const OuterTyreMargin = 245;
 
-const innerTyreMultiplier = 1000;
-const innerTyreNumber = 2;
-const innerTyreMargin = 272;
+const rimMultiplier = 1000;
+const rimNumber = 2;
+const rimMargin = 272;
 
 const config = {
 	dimensions: {
@@ -99,9 +99,9 @@ const config = {
 			width: 200,
 			height: 200,
 		})),
-		innerTyre: range(0, innerTyreNumber).map((tyre) => ({
+		rim: range(0, rimNumber).map((tyre) => ({
 			top: 509,
-			x: (tyre * innerTyreMultiplier) + innerTyreMargin,
+			x: (tyre * rimMultiplier) + rimMargin,
 			width: 135,
 			height: 150,
 		})),

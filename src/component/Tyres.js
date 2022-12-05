@@ -1,11 +1,10 @@
 import { React } from 'react';
 import OuterTyre from './OuterTyre';
-import InnerTyre from './InnerTyre';
-
+import Rim from './Rim';
 const Tyres = ({ config }) =>
 	<div>
 		<OuterTyre { ...config }/>
-		<InnerTyre { ...config }/>
+		<Rim { ...config }/>
 	</div>;
 
 export default Tyres;

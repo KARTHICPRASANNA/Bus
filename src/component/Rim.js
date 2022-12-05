@@ -1,7 +1,7 @@
 import { React } from 'react';
 import Circle from './Circle';
 
-const InnerTyre = ({ dimensions }) => dimensions.innerTyre.map((tyre, key) =>
+const Rim = ({ dimensions }) => dimensions.rim.map((tyre, key) =>
 	<Circle key={ key } { ... { ...tyre, style: 'rim' } }/>);
 
-export default InnerTyre;
+export default Rim;
