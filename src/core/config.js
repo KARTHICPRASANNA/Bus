@@ -15,6 +15,9 @@ const doorMultiplier = 110;
 const doorCount = 2;
 const doorMargin = 75;
 
+const windowMultiplier = 350;
+const windowCount = 4;
+
 const config = {
 	dimensions: {
 		busBody: {
@@ -92,24 +95,31 @@ const config = {
 			width: 18,
 			height: 50,
 		},
-		outerTyre: range(0, OuterTyreNumber).map((tyre) => ({
+		outerTyres: range(0, OuterTyreNumber).map((tyre) => ({
 			top: 490,
 			left: (tyre * outerTyreMultiplier) + OuterTyreMargin,
 			width: 200,
 			height: 200,
 		})),
-		rim: range(0, rimNumber).map((tyre) => ({
+		rims: range(0, rimNumber).map((tyre) => ({
 			top: 509,
 			left: (tyre * rimMultiplier) + rimMargin,
 			width: 135,
 			height: 150,
 		})),
-		doorInnerFrame: range(0, doorCount).map((door) => ({
+		doorInnerFrames: range(0, doorCount).map((door) => ({
 			top: 145,
 			left: (door * doorMultiplier) + doorMargin,
 			width: 100,
 			height: 400,
 		})),
+		windows: range(1, windowCount).map((window) => ({
+			top: 30,
+			left: window * windowMultiplier,
+			width: 180,
+			height: 180,
+		})),
+
 	},
 };
 

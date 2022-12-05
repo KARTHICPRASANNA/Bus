@@ -1,13 +1,12 @@
 import { React } from 'react';
 
-const Window = ({ size, x, y }) =>
+const Window = ({ data }) =>
 	<div
 		style={ {
-			width: `${ size }px`,
-			height: `${ size }px`,
-			left: `${ x }px`,
-			top: `${ y }px`,
-			position: 'absolute',
+			top: `${ data.top }px`,
+			left: `${ data.left }px`,
+			width: `${ data.width }px`,
+			height: `${ data.height }px`,
 		} }
 		className="window"
 	/>;

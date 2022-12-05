@@ -29,7 +29,7 @@ const Bus = (context) =>
 	>
 		<Doors { ...context }/>
 		<Tyres { ...context }/>
-		<Windows/>
+		<Windows { ...context }/>
 		<Roof { ...context }/>
 		<Luggage/>
 		<FrontGlass { ...context }/>
