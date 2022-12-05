@@ -11,6 +11,10 @@ const rimMultiplier = 1000;
 const rimNumber = 2;
 const rimMargin = 272;
 
+const doorMultiplier = 110;
+const doorCount = 2;
+const doorMargin = 75;
+
 const config = {
 	dimensions: {
 		busBody: {
@@ -31,11 +35,6 @@ const config = {
 			right: 930,
 			width: 250,
 			height: 450,
-		},
-		doorInterior: {
-			top: 145,
-			width: 100,
-			height: 400,
 		},
 		doorHandle: {
 			bottom: 240,
@@ -101,11 +100,16 @@ const config = {
 		})),
 		rim: range(0, rimNumber).map((tyre) => ({
 			top: 509,
-			x: (tyre * rimMultiplier) + rimMargin,
+			left: (tyre * rimMultiplier) + rimMargin,
 			width: 135,
 			height: 150,
 		})),
-
+		doorInterior: range(0, doorCount).map((door) => ({
+			top: 145,
+			left: (door * doorMultiplier) + doorMargin,
+			width: 100,
+			height: 400,
+		})),
 	},
 };
 

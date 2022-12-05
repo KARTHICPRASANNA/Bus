@@ -27,7 +27,7 @@ const Bus = (context) =>
 		className="busBody"
 		style={ style(context) }
 	>
-		<Doors/>
+		<Doors { ...context }/>
 		<Tyres { ...context }/>
 		<Windows/>
 		<Roof { ...context }/>

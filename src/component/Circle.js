@@ -1,10 +1,10 @@
 import { React } from 'react';
 
-const Circle = ({ x, top, width, height, style }) =>
+const Circle = ({ top, left, width, height, style }) =>
 	<div
 		style={ {
 			top: `${ top }px`,
-			left: `${ x }px`,
+			left: `${ left }px`,
 			width: `${ width }px`,
 			height: `${ height }px`,
 
