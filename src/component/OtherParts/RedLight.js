@@ -2,7 +2,7 @@ import { React } from 'react';
 
 const RedLight = ({ data }) => {
 	const { redLight:
-		{ top, left, width, height }} = data;
+		{ top, left, width, height, borderRadius, border }} = data;
 
 	return (
 		<div
@@ -12,6 +12,8 @@ const RedLight = ({ data }) => {
 				left: `${ left }px`,
 				width: `${ width }px`,
 				height: `${ height }px`,
+				borderRadius: `${ borderRadius }px`,
+				border: `${ border }px solid black`,
 			} }
 		/>);
 };

@@ -7,6 +7,7 @@ const Rectangle = ({ data }) =>
 			left: `${ data.left }px`,
 			width: `${ data.width }px`,
 			height: `${ data.height }px`,
+			border: `${ data.border }px double black`,
 		} }
 		className="doorInterior"
 	/>;

@@ -7,6 +7,8 @@ const Window = ({ data }) =>
 			left: `${ data.left }px`,
 			width: `${ data.width }px`,
 			height: `${ data.height }px`,
+			borderRadius: `${ data.borderRadius }px`,
+			border: `${ data.border }px solid black`,
 		} }
 		className="window"
 	/>;

@@ -11,35 +11,26 @@
 
 .tyre {
 	position: absolute;
-	border-radius: 50%;
-	border: 5px solid grey;
 	background-color: black;
 }
 
 .rim {
 	position: absolute;
-	border-radius: 50%;
-	border: 12px dashed black;
 	background-color: grey;
 }
 
 .window {
 	position: absolute;
-	border-radius: 30px;
-	border: 2px solid black;
 	background-color: aquamarine;
 }
 
 .door {
 	position: absolute;
-	border-radius: 10px;
-	border: 4px solid black;
 	background-color: wheat;
 }
 
 .doorInterior {
 	position: absolute;
-	border: 5px double black;
 	background-color: wheat;
 }
 
@@ -59,18 +50,15 @@
 
 .luggageFrame {
 	position: absolute;
-	border: 3px solid black;
 	background-color: wheat;
 }
 
 .luggageSection {
 	position: absolute;
-	border: 3px double black;
 }
 
 .luggageDoorInterior {
 	position: absolute;
-	border: 3px double black;
 }
 
 .luggageDoorHandle {
@@ -80,20 +68,15 @@
 
 .frontGlass {
 	position: absolute;
-	border-radius: 100px 0px 60px 0px;
 	background-color: darkslategray;
-	border: 2px solid wheat;
 }
 
 .redLight {
 	position: absolute;
 	background-color: red;
-	border: 1px solid black;
-	border-radius: 2px;
 }
 
 .rearIndicator {
 	position: absolute;
 	background-color: orangered;
-	border: 1px solid black;
 }

@@ -1,7 +1,7 @@
 import { React } from 'react';
 
 const LuggageFrame = ({ luggageFrame }) => {
-	const { top, left, width, height } = luggageFrame;
+	const { top, left, width, height, border } = luggageFrame;
 
 	return (
 		<div
@@ -11,6 +11,7 @@ const LuggageFrame = ({ luggageFrame }) => {
 				left: `${ left }px`,
 				width: `${ width }px`,
 				height: `${ height }px`,
+				border: `${ border }px solid black`,
 			} }
 		/>);
 };

@@ -48,6 +48,8 @@ const getDoor = (size) => ({
 	left: 510 * size,
 	width: 250 * size,
 	height: 450 * size,
+	borderRadius: 10 * size,
+	border: 4 * size,
 });
 
 const getDoorHandle = (size) => ({
@@ -84,6 +86,7 @@ const getLuggageFrame = (size) => ({
 	left: 780 * size,
 	width: 460 * size,
 	height: 230 * size,
+	border: 3 * size,
 });
 
 const getLuggageSection = (size) => ({
@@ -91,6 +94,7 @@ const getLuggageSection = (size) => ({
 	left: 1010 * size,
 	width: 0,
 	height: 230 * size,
+	border: 3 * size,
 });
 
 const getFrontGlass = (size) => ({
@@ -112,6 +116,8 @@ const getRedLight = (size) => ({
 	left: 1700 * size,
 	width: 18 * size,
 	height: 50 * size,
+	borderRadius: 2 * size,
+	border: 1 * size,
 });
 
 const getRearIndicator = (size) => ({
@@ -119,6 +125,7 @@ const getRearIndicator = (size) => ({
 	left: 1700 * size,
 	width: 18 * size,
 	height: 50 * size,
+	border: 1 * size,
 });
 
 const getOuterTyres = (size) => range(0, OuterTyreNumber).map((tyre) => ({
@@ -126,6 +133,8 @@ const getOuterTyres = (size) => range(0, OuterTyreNumber).map((tyre) => ({
 	left: ((tyre * outerTyreMultiplier) + OuterTyreMargin) * size,
 	width: 200 * size,
 	height: 200 * size,
+	borderRadius: 100 * size,
+	border: 5 * size,
 }));
 
 const getRims = (size) => range(0, rimNumber).map((tyre) => ({
@@ -133,6 +142,8 @@ const getRims = (size) => range(0, rimNumber).map((tyre) => ({
 	left: ((tyre * rimMultiplier) + rimMargin) * size,
 	width: 135 * size,
 	height: 150 * size,
+	borderRadius: 100 * size,
+	border: 12 * size,
 }));
 
 const getDoorInnerFrames = (size) => range(0, doorCount).map((door) => ({
@@ -140,6 +151,7 @@ const getDoorInnerFrames = (size) => range(0, doorCount).map((door) => ({
 	left: ((door * doorMultiplier) + doorMargin) * size,
 	width: 100 * size,
 	height: 400 * size,
+	border: 5 * size,
 }));
 
 const getWindows = (size) => range(1, windowCount).map((window) => ({
@@ -147,6 +159,8 @@ const getWindows = (size) => range(1, windowCount).map((window) => ({
 	left: ((window * windowMultiplier) + windowMargin) * size,
 	width: 180 * size,
 	height: 180 * size,
+	borderRadius: 30 * size,
+	border: 2 * size,
 }));
 
 const getLuggageDoors = (size) => range(0, luggageDoorCount).map((door) => ({
@@ -154,6 +168,7 @@ const getLuggageDoors = (size) => range(0, luggageDoorCount).map((door) => ({
 	left: ((door * luggageDoorMultiplier) + luggageDoorMargin) * size,
 	width: 220 * size,
 	height: 0,
+	border: 3 * size,
 }));
 
 const getLuggageDoorsHandles = (size) =>

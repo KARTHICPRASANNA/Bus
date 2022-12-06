@@ -2,7 +2,7 @@ import { React } from 'react';
 
 const RearIndicator = ({ data }) => {
 	const { rearIndicator:
-		{ top, left, width, height }} = data;
+		{ top, left, width, height, border }} = data;
 
 	return (
 		<div
@@ -12,6 +12,7 @@ const RearIndicator = ({ data }) => {
 				left: `${ left }px`,
 				width: `${ width }px`,
 				height: `${ height }px`,
+				border: `${ border }px solid black`,
 			} }
 		/>);
 };

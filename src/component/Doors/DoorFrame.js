@@ -1,7 +1,7 @@
 import { React } from 'react';
 
 const DoorFrame = ({ door }) => {
-	const { top, left, width, height } = door;
+	const { top, left, width, height, borderRadius, border } = door;
 
 	return (
 		<div
@@ -11,6 +11,8 @@ const DoorFrame = ({ door }) => {
 				left: `${ left }px`,
 				width: `${ width }px`,
 				height: `${ height }px`,
+				borderRadius: `${ borderRadius }px`,
+				border: `${ border }px solid black`,
 			} }
 		/>);
 };
