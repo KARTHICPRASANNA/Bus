@@ -1,8 +1,8 @@
 import { React } from 'react';
 
-const RearIndicator = ({ config }) => {
-	const { dimensions: { rearIndicator:
-		{ top, left, width, height }}} = config;
+const RearIndicator = ({ data }) => {
+	const { rearIndicator:
+		{ top, left, width, height }} = data;
 
 	return (
 		<div

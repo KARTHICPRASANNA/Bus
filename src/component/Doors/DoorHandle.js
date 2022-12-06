@@ -1,7 +1,7 @@
 import { React } from 'react';
 
-const DoorHandle = ({ dimensions }) => {
-	const { doorHandle: { top, left, width, height }} = dimensions;
+const DoorHandle = ({ doorHandle }) => {
+	const { top, left, width, height } = doorHandle;
 
 	return (
 		<div

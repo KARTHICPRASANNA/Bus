@@ -1,9 +1,5 @@
-import getDimension from '../service/dimensions';
-
-const size = 1 ;
-
 const config = {
-	dimensions: getDimension(size),
+	size: 1,
 };
 
 export default config;

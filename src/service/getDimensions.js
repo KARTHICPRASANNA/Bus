@@ -1,5 +1,3 @@
-/* eslint-disable max-statements */
-/* eslint-disable max-lines-per-function */
 /* eslint-disable no-magic-numbers */
 import { range } from '@laufire/utils/collection';
 import { rndValue } from '@laufire/utils/random';
@@ -36,6 +34,13 @@ const getBusBody = (size) => ({
 	width: 1700 * size,
 	height: 600 * size,
 	busBodyColor: rndValue(colors),
+	borderRadius: {
+		topLeft: 100 * size,
+		topRight: 50 * size,
+		bottomRight: 50 * size,
+		bottomLeft: 50 * size,
+	},
+	border: 2 * size,
 });
 
 const getDoor = (size) => ({
@@ -57,6 +62,13 @@ const getRoof = (size) => ({
 	left: 115 * size,
 	width: 1550 * size,
 	height: 20 * size,
+	borderRadius: {
+		topLeft: 50 * size,
+		topRight: 50 * size,
+		bottomRight: 0,
+		bottomLeft: 0,
+	},
+	border: 5 * size,
 });
 
 const getSticker = (size) => ({
@@ -64,6 +76,7 @@ const getSticker = (size) => ({
 	left: 770 * size,
 	width: 925 * size,
 	height: 0,
+	border: 3 * size,
 });
 
 const getLuggageFrame = (size) => ({
@@ -85,6 +98,13 @@ const getFrontGlass = (size) => ({
 	left: 0,
 	width: 105 * size,
 	height: 215 * size,
+	borderRadius: {
+		topLeft: 100 * size,
+		topRight: 0,
+		bottomRight: 60 * size,
+		bottomLeft: 0,
+	},
+	border: 2 * size,
 });
 
 const getRedLight = (size) => ({
@@ -140,32 +160,28 @@ const getLuggageDoorsHandles = (size) =>
 	range(0, luggageHandleCount).map((handle) => ({
 		top: 564 * size,
 		left: ((handle * luggageHandleMultiplier)
-	+ luggageHandleMargin) * size,
+			+ luggageHandleMargin) * size,
 		width: 30 * size,
 		height: 10 * size,
 	}));
 
-const getDimension = (size) => {
-	const busBody = getBusBody(size);
-	const door = getDoor(size);
-	const doorHandle = getDoorHandle(size);
-	const roof = getRoof(size);
-	const sticker = getSticker(size);
-	const luggageFrame = getLuggageFrame(size);
-	const luggageSection = getLuggageSection(size);
-	const frontGlass = getFrontGlass(size);
-	const redLight = getRedLight(size);
-	const rearIndicator = getRearIndicator(size);
-	const outerTyres = getOuterTyres(size);
-	const rims = getRims(size);
-	const doorInnerFrames = getDoorInnerFrames(size);
-	const windows = getWindows(size);
-	const luggageDoors = getLuggageDoors(size);
-	const luggageDoorsHandles = getLuggageDoorsHandles(size);
+const getDimensions = (size) => ({
+	busBody: getBusBody(size),
+	door: getDoor(size),
+	doorHandle: getDoorHandle(size),
+	roof: getRoof(size),
+	sticker: getSticker(size),
+	luggageFrame: getLuggageFrame(size),
+	luggageSection: getLuggageSection(size),
+	frontGlass: getFrontGlass(size),
+	redLight: getRedLight(size),
+	rearIndicator: getRearIndicator(size),
+	outerTyres: getOuterTyres(size),
+	rims: getRims(size),
+	doorInnerFrames: getDoorInnerFrames(size),
+	windows: getWindows(size),
+	luggageDoors: getLuggageDoors(size),
+	luggageDoorsHandles: getLuggageDoorsHandles(size),
+});
 
-	return { busBody, door, doorHandle, roof, sticker, luggageFrame,
-		luggageSection, frontGlass, redLight, rearIndicator, outerTyres,
-		rims, doorInnerFrames, windows, luggageDoors, luggageDoorsHandles };
-};
-
-export default getDimension;
+export default getDimensions;

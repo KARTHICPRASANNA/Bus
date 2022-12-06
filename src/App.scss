@@ -1,13 +1,11 @@
-.App{
+.App {
 	width: 100vw;
 	height: 100vh;
-	background-image: linear-gradient(lightgreen, lightblue) ;
+	background: linear-gradient(lightgreen, lightblue);
 }
 
 .busBody {
 	position: absolute;
-	border-radius: 100px 50px 50px 50px;
-	border: 2px solid black;
 	background-color: lightsalmon;
 }
 
@@ -52,14 +50,11 @@
 
 .roof {
 	position: absolute;
-	border-radius: 50% 50% 0 0;
 	background-color: wheat;
-	border: 5px solid black;
 }
 
 .sticker {
 	position: absolute;
-	border: 3px solid wheat;
 }
 
 .luggageFrame {
@@ -87,18 +82,17 @@
 	position: absolute;
 	border-radius: 100px 0px 60px 0px;
 	background-color: darkslategray;
-	clip-path: polygon(0% 0, 100% 0, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0 53%);
 	border: 2px solid wheat;
 }
 
-.redLight{
+.redLight {
 	position: absolute;
 	background-color: red;
 	border: 1px solid black;
 	border-radius: 2px;
 }
 
-.rearIndicator{
+.rearIndicator {
 	position: absolute;
 	background-color: orangered;
 	border: 1px solid black;

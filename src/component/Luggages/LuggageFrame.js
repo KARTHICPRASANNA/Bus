@@ -1,7 +1,7 @@
 import { React } from 'react';
 
-const LuggageFrame = ({ dimensions }) => {
-	const { luggageFrame: { top, left, width, height }} = dimensions;
+const LuggageFrame = ({ luggageFrame }) => {
+	const { top, left, width, height } = luggageFrame;
 
 	return (
 		<div

@@ -3,11 +3,11 @@ import DoorFrame from './DoorFrame';
 import DoorInnerFrame from './DoorInnerFrame';
 import DoorHandle from './DoorHandle';
 
-const Doors = ({ config }) =>
+const Doors = ({ data }) =>
 	<div>
-		<DoorFrame { ...config }/>
-		<DoorInnerFrame { ...config }/>
-		<DoorHandle { ...config }/>
+		<DoorFrame { ...data }/>
+		<DoorInnerFrame { ...data }/>
+		<DoorHandle { ...data }/>
 	</div>;
 
 export default Doors;

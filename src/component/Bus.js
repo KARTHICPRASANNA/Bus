@@ -10,8 +10,8 @@ import RedLight from './OtherParts/RedLight';
 import RearIndicator from './OtherParts/RearIndicator';
 
 const style = (context) => {
-	const { config: { dimensions: { busBody: { busBodyColor, top,
-		left, width, height }}}} = context;
+	const { data: { busBody: { busBodyColor, top,
+		left, width, height, borderRadius, border }}} = context;
 
 	return {
 		backgroundColor: busBodyColor,
@@ -19,6 +19,11 @@ const style = (context) => {
 		left: `${ left }px`,
 		width: `${ width }px`,
 		height: `${ height }px`,
+		borderTopLeftRadius: `${ borderRadius.topLeft }px`,
+		borderTopRightRadius: `${ borderRadius.topRight }px`,
+		borderBottomRightRadius: `${ borderRadius.bottomRight }px`,
+		borderBottomLeftRadius: `${ borderRadius.bottomLeft }px`,
+		border: `${ border }px solid black`,
 	};
 };
 
