@@ -14,8 +14,25 @@
 	background-color: black;
 }
 
+@keyframes rotate {
+	from {transform: rotate(0deg)}
+	to {transform: rotate(360deg)}
+}
+
+@keyframes moveBus {
+	from {transform: translate(0,0) scaleX(-1)}
+	to {transform: translate(1000px,0px) scaleX(-1)}
+}
+
+@keyframes moveBusRtl {
+	from {transform: translate(800px,0px)}
+	to {transform: translate(0px,0px)}
+}
+
+
 .rim {
 	position: absolute;
+	animation: rotate 1s infinite linear;
 	background-color: grey;
 }
 
@@ -74,9 +91,11 @@
 .redLight {
 	position: absolute;
 	background-color: red;
+	box-shadow: 0px 2px 8px red;
 }
 
 .rearIndicator {
 	position: absolute;
 	background-color: orangered;
+	box-shadow: 0px 2px 8px red ;
 }

@@ -11,7 +11,8 @@ import RearIndicator from './OtherParts/RearIndicator';
 
 const style = (context) => {
 	const { data: { busBody: { busBodyColor, top,
-		left, width, height, borderRadius, border }}} = context;
+		left, width, height, borderRadius,
+		border, transform, animation }}} = context;
 
 	return {
 		backgroundColor: busBodyColor,
@@ -24,6 +25,8 @@ const style = (context) => {
 		borderBottomRightRadius: `${ borderRadius.bottomRight }px`,
 		borderBottomLeftRadius: `${ borderRadius.bottomLeft }px`,
 		border: `${ border }px solid black`,
+		transform: `scaleX(${ transform })`,
+		animation: `${ animation } 15s infinite linear`,
 	};
 };
 

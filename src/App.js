@@ -1,13 +1,17 @@
 import { React } from 'react';
 import './App.scss';
 import Bus from './component/Bus';
-import getDimensions from './service/getDimensions';
+import getBusDimension from './service/getBusDimension';
 
 const App = (context) => {
-	const { config: { size }} = context;
+	const { config } = context;
 
 	return <div className="App" role="App">
-		<Bus { ...{ ...context, data: getDimensions(size) } }/>
+		{config.buses.map((data, key) =>
+			<Bus
+				key={ key }
+				{ ...{ ...context, data: getBusDimension(data) } }
+			/>)}
 	</div>;
 };
 
