@@ -38,7 +38,9 @@
 
 .window {
 	position: absolute;
+	background-size: cover;
 	background-color: aquamarine;
+	transform: translate(0,0) scaleX(-1);
 }
 
 .door {

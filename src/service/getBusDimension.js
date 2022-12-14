@@ -4,6 +4,10 @@ import { rndValue } from '@laufire/utils/random';
 
 const colors = ['CadetBlue', 'firebrick', 'paleVioletRed'];
 
+const images = ['/image/passenger.png',
+	'/image/passenger1.png',
+	'/image/passenger2.png'];
+
 const outerTyreMultiplier = 1000;
 const OuterTyreCount = 2;
 const OuterTyreMargin = 245;
@@ -17,8 +21,8 @@ const doorCount = 2;
 const doorMargin = 530;
 
 const windowMultiplier = 350;
-const windowCount = 4;
-const windowMargin = 430;
+const windowCount = 3;
+const windowMargin = 800;
 
 const luggageDoorMultiplier = 231;
 const luggageDoorCount = 2;
@@ -156,13 +160,14 @@ const getDoorInnerFrames = ({ size }) => range(0, doorCount).map((door) => ({
 	border: 5 * size,
 }));
 
-const getWindows = ({ size }) => range(1, windowCount).map((window) => ({
+const getWindows = ({ size }) => range(0, windowCount).map((window) => ({
 	top: 30 * size,
 	left: ((window * windowMultiplier) + windowMargin) * size,
 	width: 180 * size,
 	height: 180 * size,
 	borderRadius: 30 * size,
 	border: 2 * size,
+	backgroundImage: images[window],
 }));
 
 const getLuggageDoors = ({ size }) =>

@@ -9,6 +9,7 @@ const Window = ({ data }) =>
 			height: `${ data.height }px`,
 			borderRadius: `${ data.borderRadius }px`,
 			border: `${ data.border }px solid black`,
+			backgroundImage: `url(${ process.env.PUBLIC_URL + data.backgroundImage })`,
 		} }
 		className="window"
 	/>;
